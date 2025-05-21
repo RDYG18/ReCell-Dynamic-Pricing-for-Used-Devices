@@ -34,7 +34,17 @@ To support its growth, ReCell seeks to optimize pricing through data driven stra
 </div>
 
 ---
+## Executive Summary
 
+<div align="justify
+  
+The model demonstrates solid performance, explaining approximately **80% of the variation** in resale prices, indicating a strong fit. It maintains consistent accuracy across both training and test sets, with an average prediction error of **4.8%** on normalized prices reflecting high reliability.
+
+Key predictors such as **RAM, camera quality, 4G connectivity**, and the **original new price** have a significant positive impact on resale value, while **device age** and **uncommon operating systems** reduce it. The model also highlights that certain brands, like **Nokia and Xiaomi**, retain value better over time.
+
+</div>
+
+---
 
 ## Exploratory Data Analysis (EDA)
 
