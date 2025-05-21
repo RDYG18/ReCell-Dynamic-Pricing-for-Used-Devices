@@ -36,7 +36,7 @@ To support its growth, ReCell seeks to optimize pricing through data driven stra
 ---
 ## Executive Summary
 
-<div align="justify
+<div align="justify">
   
 The model demonstrates solid performance, explaining approximately **80% of the variation** in resale prices, indicating a strong fit. It maintains consistent accuracy across both training and test sets, with an average prediction error of **4.8%** on normalized prices reflecting high reliability.
 
