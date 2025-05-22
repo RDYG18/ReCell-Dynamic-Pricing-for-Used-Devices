@@ -13,12 +13,6 @@
   - [Linear Regression Model](#linear-regression-model)
   - [Multicollinearity and Treat High P-values](#multicollinearity-and-treat-high-p-values)
   - [Final Linear Model](#final-linear-model)
-  - [Threshold Optimization](#threshold-optimization)
-  - [Model performance summary](#model-performance-summary)
-- [Decision Tree](#decision-tree)
-  - [Important features](#important-features)
-  - [Pruning the tree](#pruning-the-tree)
-  - [Final Feature Importances Summary](#final-feature-importances-summary)
 - [Insights](#insights)
 - [Business Recommendations](#business-recommendations)
 - [Assumptions & Limitations](#assumptions--limitations)
@@ -300,34 +294,34 @@ There are several outliers present in the dataset. However, we decided not to tr
 
 **Data preparation** 
 
-The data was preprocessed by encoding categorical variables, adding a constant for the intercept, and splitting it into 70% training and 30% test. This ensured the dataset was clean, numeric, and ready for Linear Regression modeling and evaluation.
+The data was preprocessed by encoding categorical variables, adding a constant for the intercept, and splitting it into 70% training and 30% test. 
 
 --- 
 
 ## Linear Regression Model
 
-The model explains over **80% of the variance** in the target variable and maintains low prediction error on both training and test sets, indicating strong generalization and no signs of overfitting. With a **MAE** of **20%**, it predicts normalized resale prices with minimal average deviation. Finally, a **MAPE** of **4.8%** confirms the model’s ability to estimate resale prices within a tight and practical margin, making it suitable for real world pricing strategies.
+The model explains over **80% of the variance** in the target variable and maintains low prediction error on both training and test sets, indicating strong generalization and no signs of overfitting. With a **MAE** of **20%**, it predicts normalized resale prices with minimal average deviation. Finally, a **MAPE** of **4.7%** confirms the model’s ability to estimate resale prices within a tight and practical margin, making it suitable for real world pricing strategies.
 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/efd22dba-f8c2-4285-b6c8-b90a2e4a582b" alt="image" width="500"/>
+  <img src="https://github.com/user-attachments/assets/809857cf-afad-4867-9da4-35d0a02f98fb" alt="image" width="500"/>
 </p>
 
 ---
 
 ## Multicollinearity and Treat High P-values
 
-To improve model stability and interpretability, I first addressed multicollinearity by calculating the VIF. The analysis revealed that some features such as screen_size, brand_name_Apple, and brand_name_Others had high multicollinearity, which could distort coefficient estimates. These variables were removed, reducing VIF scores across the remaining features to acceptable levels. Additionally, I refined the model by eliminating variables with **p-values greater than 0.05**, as they were not statistically significant. This two step feature selection process enhanced the model’s robustness and ensured that only meaningful predictors were retained.
+To improve model stability and interpretability, I first addressed multicollinearity by calculating the VIF. The analysis revealed that some features such as screen_size, brand_name_Apple, and brand_name_Others had high multicollinearity. These variables were removed, reducing VIF scores across the remaining features to acceptable levels. Additionally, I refined the model by eliminating variables with **p-values greater than 0.05**, as they were not statistically significant. This two step feature selection process enhanced the model’s robustness and ensured that only meaningful predictors were retained.
 
 
 ---
 
 ## Final Linear Model 
 
-The **Linear Regression** model explains **80%** of the variation in resale prices and predicts used device values with an average error of just **4.8%**. This makes it a reliable tool for estimating second-hand value and supporting smarter pricing decisions. Also, the model shows which aspects of a phone increase its resale value and which brands retain their value.
+The **Linear Regression** model explains **80%** of the variation in resale prices and predicts used device values with an average error of just **4.8%**. This makes it a reliable tool for estimating second hand value and supporting smarter pricing decisions. Also, the model shows which aspects of a phone increase its resale value and which brands retain their value.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/08b7172d-de91-4ce1-971e-82dbf29c26b7" alt="image" width="500"/>
+  <img src="https://github.com/user-attachments/assets/fa3c7ca3-b13e-4e98-96ed-c5c4f597f5ba" alt="image" width="500"/>
 </p>
 
 
