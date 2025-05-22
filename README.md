@@ -327,9 +327,9 @@ The **Linear Regression** model explains **80%** of the variation in resale pric
 
 ## Insights
 
-- **RAM matters**: Devices with more memory are more valuable in the second-hand market. Each additional GB of RAM increases the resale price by approximately **0.0344 units**, reflecting user preference for performance and multitasking.
+- **RAM matters**: Devices with more memory are more valuable in the second hand market. Each additional GB of RAM increases the resale price by approximately **0.0344 units**, reflecting user preference for performance and multitasking.
 
-- **Camera quality drives value**: Both rear and selfie cameras influence price. Each extra megapixel adds **0.0261** and **0.0182 units**, respectively, to the resale value—showing that photography remains a key purchase driver.
+- **Camera quality drives value**: Both rear and selfie cameras influence price. Each extra megapixel adds **0.0261** and **0.0182 units**, respectively, to the resale value showing that photography remains a key purchase driver.
 
 - **Heavier devices resell for more**: A higher weight, often linked to better build quality or more features, slightly increases resale price by **0.0017 units** per gram.
 
@@ -337,7 +337,7 @@ The **Linear Regression** model explains **80%** of the variation in resale pric
 
 - **Premium devices hold value**: For every **1 unit** increase in the normalized new price, the resale value rises by **0.3005 units**, highlighting strong brand and feature retention in premium models.
 
-- **Battery capacity has minor impact**: While relevant to user experience, its effect on resale is limited—each additional mAh only increases value by **0.00001771 units**.
+- **Battery capacity has minor impact**: While relevant to user experience, its effect on resale is limited each additional mAh only increases value by **0.00001771 units**.
 
 - **Age reduces price**: Every additional year since release lowers resale value by **0.0119 units**, underlining the importance of model freshness.
 
