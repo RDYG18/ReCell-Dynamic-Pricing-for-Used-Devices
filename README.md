@@ -1,6 +1,7 @@
 # Dynamic Pricing for Used Devices - ReCell 
 
-![image](https://github.com/user-attachments/assets/68bfad6f-8fc9-4cfa-a125-6901881bb1e8)
+![image](https://github.com/user-attachments/assets/023bc312-8544-4d86-b55f-f4a84b88e9e9)
+
 
 ## Table of Contents
 
@@ -80,16 +81,16 @@ Both normalized used and new device prices show an approximately normal distribu
 
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/f09c1842-9d5a-48da-be16-1934ad3303f6" width="400"/></td>
-    <td><img src="https://github.com/user-attachments/assets/5805bab4-1498-4d92-873f-e760bd9e6f5c" width="400"/></td>
+    <td><img src="https://github.com/user-attachments/assets/cb5d2b10-e81b-4f58-8143-8f74e8a98fe7" width="800"/></td>
+    <td><img src="https://github.com/user-attachments/assets/ad324a6e-092d-46bb-a1c9-229a34b08efc" width="800"/></td>
   </tr>
 </table>
 
 Samsung, Huawei, and LG are the most represented brands in the dataset, excluding the 'Others' category, which aggregates unregistered brands. Additionally, Android is the dominant operating system (OS) among the listed devices. 
 
 <p>
-  <img src="https://github.com/user-attachments/assets/f854fa38-dec8-4efc-a6d2-7083cd142ed9" width="550" style="display:inline-block; vertical-align:top; margin-right:20px;"/>
-  <img src="https://github.com/user-attachments/assets/f392e1d8-2774-497b-ab6e-af877f7acf1f" width="400" style="display:inline-block; vertical-align:top;"/>
+  <img src="https://github.com/user-attachments/assets/8c997bf6-9404-43ca-ab69-d5c854774c89" width="550" style="display:inline-block; vertical-align:top; margin-right:20px;"/>
+  <img src="https://github.com/user-attachments/assets/edfcdcd4-f510-45ec-9577-3cc23924d2a0" width="400" style="display:inline-block; vertical-align:top;"/>
 </p>
 
 ---
@@ -97,28 +98,28 @@ Samsung, Huawei, and LG are the most represented brands in the dataset, excludin
 ## Bivariate Analysis
 
 
-<img src="https://github.com/user-attachments/assets/7814462f-e070-43c7-9745-b27e34976776" width="870"/>
+<img src="https://github.com/user-attachments/assets/9dd38983-c14f-4e6f-8e88-6b0ebaa115c5" width="870"/>
 
 
-**Positive Correlations** (Potential Collinearity) 
+**Positive Correlations** 
 
-- screen_size and battery (0.81): Devices with larger screens typically have higher battery capacities, which is expected due to increased power consumption.
+- screen_size and battery: Devices with larger screens typically have higher battery capacities, which is expected due to increased power consumption.
 
-- screen_size and weight (0.83): Larger screens often contribute to increased device weight.
+- screen_size and weight: Larger screens often contribute to increased device weight.
 
-- battery and weight (0.70): Bigger batteries tend to add more weight to the device.
+- battery and weight: Bigger batteries tend to add more weight to the device.
 
-- normalized_used_price and normalized_new_price (0.83): The used price is heavily influenced by the original retail price.
+- normalized_used_price and normalized_new_price: The used price is heavily influenced by the original retail price.
 
  **Negative Correlations**  
 
-- days_used and selfie_camera_mp (-0.69): Older devices tend to have lower resolution front cameras
+- days_used and selfie_camera_mp: Older devices tend to have lower resolution front cameras
 
-- days_used and normalized_used_price (-0.51): Resale value decreases as devices age
+- days_used and normalized_used_price: Resale value decreases as devices age
 
-- days_used and battery (-0.49): Older models often have smaller or more degraded batteries
+- days_used and battery: Older models often have smaller or more degraded batteries
 
-- days_used and selfie_camera_mp (-0.55): Devices that have been used longer are typically older models with lower camera specs
+- days_used and selfie_camera_mp: Devices that have been used longer are typically older models with lower camera specs
 
 ---
 
@@ -127,7 +128,8 @@ Samsung, Huawei, and LG are the most represented brands in the dataset, excludin
 Does higher RAM lead to higher resale value, and do brands with more RAM target different market segments through pricing?
 
 
-![image](https://github.com/user-attachments/assets/7f816ea0-f9c7-4ba4-8d84-25e8b06c0e19)
+![image](https://github.com/user-attachments/assets/68063c20-0455-4517-a00c-d90b951f0de1)
+
 
 Interpretation:
 
@@ -148,7 +150,8 @@ Does higher battery capacity lead to significantly heavier devices, and how does
 
  **note**: For this boxplot, I focused on the relationship between battery size and weight by analyzing only smartphones with **battery capacities above 4500 mAh**, allowing for a clearer comparison of **device weight across brands** with large batteries.
 
-![image](https://github.com/user-attachments/assets/e466c6a6-c758-482f-ab1a-b0200c378e4e)
+![image](https://github.com/user-attachments/assets/0ea25d6d-dbd3-45cc-a3c5-21d9e1e4ed0d)
+
 
 Interpretation: 
 
@@ -171,7 +174,7 @@ Does larger screen size lead to higher resale prices, and how does screen demand
  **note**: This barplot includes only devices with screen sizes larger than 6 inches (the standard threshold) to focus on phones with larger displays.
 
 
-<img src="https://github.com/user-attachments/assets/c5e4158d-63ae-4c7e-b30c-b0719d9915ba" width="800"/>
+<img src="https://github.com/user-attachments/assets/f03a2a83-fbe3-418b-88b2-5a914fdb4647" width="800"/>
 
 
 
@@ -194,7 +197,8 @@ Interpretation:
 Does higher selfie camera quality lead to increased resale prices, and how significant is the front camera in shaping consumer value perception?
 
  **note**: In order to analyze which brands offer the best selfie cameras on the market, we filtered the dataset to include only devices with front cameras higher than 8 MP. 
- <img src="https://github.com/user-attachments/assets/ff35446f-f6ba-4206-af41-ce9f45e61f72" width="800"/>
+ 
+ <img src="https://github.com/user-attachments/assets/08f425ba-fef6-417c-b23a-d2443b0965d9" width="800"/>
 
  Interpretation: 
 
@@ -216,7 +220,7 @@ How does rear camera resolution influence resale value, and to what extent is it
 
 **note**: In order to analyze which brands offer the best main cameras on the market, we filtered the dataset to include only devices with main cameras higher than 16 MP. 
 
-<img src="https://github.com/user-attachments/assets/d4ccdc27-812d-4326-8b4d-1cefc2842fe1" width="800"/>
+<img src="https://github.com/user-attachments/assets/719d636d-2b82-4c34-9ac5-2304d5ac1971" width="800"/>
 
 
 Interpretation:
@@ -235,7 +239,8 @@ Interpretation:
 
 How does the presence of 4G or 5G connectivity affect the normalized resale price of devices in the second-hand market? 
 
-![image](https://github.com/user-attachments/assets/4faca113-65a2-470a-bcae-3cb09ea49ccc)
+![image](https://github.com/user-attachments/assets/7be2768d-adaa-462d-afba-6c6fdba87555)
+
 
 
 Interpretation: 
@@ -251,7 +256,7 @@ Interpretation:
 
 From 2013 to 2019, used device prices showed a steady increase, suggesting that newer models retain more resale value. Although there was a slight drop in 2020 possibly due to market saturation or rapid technological advancement the overall trend indicates that used phones are becoming more valuable, driven by better durability, higher original prices, and growing interest in sustainable tech.
 
-  <img src="https://github.com/user-attachments/assets/e289b222-5b60-4b19-a66e-cb5cc972ba60" width="800"/>
+  <img src="https://github.com/user-attachments/assets/7b15eb0c-7c9d-4397-b5f2-68c15f0972b0" width="800"/>
 
 ---
 
@@ -259,15 +264,16 @@ From 2013 to 2019, used device prices showed a steady increase, suggesting that 
 
 **Missing Value Tratment** 
 
-As mentioned earlier, we identified **491 missing values** in key columns such as main_camera_mp, selfie_camera_mp, int_memory, ram, battery, and weight. To handle them, we applied group based imputation by grouping the data by brand_name and release_year, two columns without missing values. We used the median within each group to fill the missing values, as these columns contain outliers and the median is more robust than the mean. This method provides more accurate and context aware imputations compared to using a single global value.
+As mentioned earlier, we identified **491 missing values** in key columns such as main_camera_mp, selfie_camera_mp, int_memory, ram, battery, and weight. To handle them, we applied **group based imputation** by grouping the data by **brand_name** and **release_year**, two columns without missing values. We used the median within each group to fill the missing values, as these columns contain outliers and the median is more robust than the mean. This method provides more accurate and context aware imputations compared to using a single global value.
 
 
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/b70c08b1-01e4-45d4-b70c-9d08d0907699" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/9cefb3d4-8d9c-4a1c-9733-8eec5620700d" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/57042f96-263d-4ea5-884d-8d7edb6ef139" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/d65d54ef-737c-4195-8540-fbdd49112829" width="900"/></td>
   </tr>
 </table>
+
 
 
 
@@ -275,7 +281,9 @@ As mentioned earlier, we identified **491 missing values** in key columns such a
 
 We are going to create a new column, years_since_release, by calculating the difference between the current year (2021) and the release_year of the product, using 2021 as a reference year to avoid altering the analysis of the recorded years. This transformation is more useful than the original release_year because the product's age is often more relevant for predictive models. After creating years_since_release, we drop the release_year column to avoid redundancy.
 
-  <img src="https://github.com/user-attachments/assets/5c9e6046-fb24-4c2c-be78-e31e168490d3" width="500"/>
+ <p align="center">
+  <img src="https://github.com/user-attachments/assets/153e6bce-8e46-44a1-81ea-9887d2f23066" width="500"/>
+</p>
 
 variable insights: 
 
@@ -285,9 +293,6 @@ The majority of devices were released between 3 and 7 years ago, with a median a
 **Outlier Check** 
 
 There are several outliers present in the dataset. However, we decided not to treat them, as they reflect valid and realistic values rather than errors or anomalies. Removing these points could distort the natural distribution and compromise the integrity of the analysis.
-
-
- <img src="https://github.com/user-attachments/assets/9dd4f5d3-e1c3-4968-97b0-50621709a846" width="500"/>
 
 ---
 
